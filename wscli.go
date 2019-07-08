@@ -20,7 +20,7 @@ import (
 "github.com/go-redis/redis"
 )
 
-var addr = flag.String("addr", "www.vanilla.no", "http service address")
+var addr = flag.String("addr", os.Args[1], "http service address")
 
 func main() {
 	flag.Parse()
